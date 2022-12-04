@@ -21,7 +21,7 @@ let naloga1 vsebina_datoteke =
   |> string_of_int
 
 let se_prekrivata [[a; b]; [c; d]] =
-  (a <= d && b >= c) || (b >= c && a <= d)
+  not (a > d || b < c)
 
 let naloga2 vsebina_datoteke =
   vsebina_datoteke
